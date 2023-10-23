@@ -1,0 +1,9 @@
+<h1>My To Do List</h1>
+
+<ul class="todo_list">
+   <li *ngFor="let task of tasks" [class.done]="task.done" [class.important]="task.important"
+      (click)="toggleTask(task)">
+      {{ task.name }}
+      <span class="deadline">{{ task.deadline }}</span>
+   </li>
+</ul>

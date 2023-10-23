@@ -1,0 +1,65 @@
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   background-color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+ }
+ 
+ ul.todo_list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   border-radius: 6px;
+   overflow: hidden;
+ }
+ 
+ .todo_list li.important::before {
+   content: "!";
+   margin: 0 8px;
+   color: darkred;
+   display: inline-block;
+ }
+ 
+ .todo_list li .deadline {
+   background-color: rgb(120, 153, 164);
+   color: white;
+   border-radius: 3px;
+   padding: 2px 4px;
+ }
+ 
+ .todo_list li {
+   padding: 12px;
+   padding-left: 40px;
+   list-style: none;
+   background-image: url('./img/unchecked_16.png'); 
+   background-repeat: no-repeat;
+   background-position: 0 50%;
+   background-size: 16px 16px;
+   cursor: pointer;
+ }
+ 
+ .todo_list li.done {
+   background-image: url('./img/checked_16.png'); 
+ }
+ 
+ .todo_list li:hover {
+   filter: brightness(90%);
+ }
+ 
+ .todo_list>li:nth-child(even) {
+   background-color: rgb(174, 216, 229);
+ }
+ 
+ .todo_list>li:nth-child(odd) {
+   background-color: rgb(166, 204, 217);
+ }
+ 
+ .todo_list li.done {
+   text-decoration: line-through;
+   text-decoration-thickness: 2px;
+ }
+ 
