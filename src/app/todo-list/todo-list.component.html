@@ -8,3 +8,18 @@
       <button class="remove-button" (click)="removeTask(task)">Remove</button>
    </li>
 </ul>
+<form (submit)="addTask(newTaskName.value, newTaskDeadline.value, newTaskImportant.checked)">
+   <div class="form-group">
+      <label for="newTaskName">Task Name:</label>
+      <input type="text" id="newTaskName" #newTaskName class="form-control" required>
+   </div>
+   <div class="form-group">
+      <label for="newTaskDeadline">Deadline:</label>
+      <input type="text" id="newTaskDeadline" #newTaskDeadline class="form-control" required>
+   </div>
+   <div class="form-group">
+      <label for="newTaskImportant">Important:</label>
+      <input type="checkbox" id="newTaskImportant" #newTaskImportant class="form-check-input">
+   </div>
+   <button type="submit" class="btn btn-primary">Add Task</button>
+</form>

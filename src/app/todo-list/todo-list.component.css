@@ -66,7 +66,7 @@ ul.todo_list {
    color: white;
    border-radius: 3px;
    padding: 2px 4px;
-   margin-left: 10px; /* Додайте відступ від тексту завдання */
+   margin-left: 10px; 
 }
 
 .remove-button {
@@ -85,4 +85,39 @@ ul.todo_list {
 
 .remove-button:hover {
    background-color: #ff3333;
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.form-control {
+   width: 100%;
+   padding: 8px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.form-check-input {
+   margin-top: 5px;
+}
+
+.btn {
+   background-color: #4caf50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+   background-color: #45a049;
 }
