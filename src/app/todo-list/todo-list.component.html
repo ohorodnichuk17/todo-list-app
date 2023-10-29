@@ -4,6 +4,7 @@
    <li *ngFor="let task of tasks" [class.done]="task.done" [class.important]="task.important"
       (click)="toggleTask(task)">
       {{ task.name }}
-      <span class="deadline">{{ task.deadline }}</span>
+      <span *ngIf="task.deadline" class="deadline">{{ task.deadline }}</span>
+      <button class="remove-button" (click)="removeTask(task)">Remove</button>
    </li>
 </ul>

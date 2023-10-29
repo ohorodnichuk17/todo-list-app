@@ -28,6 +28,20 @@ export class TodoListComponent {
       { name: 'Run 1 km', deadline: '15.01.2022', done: false, important: false }
    ];
 
+   removeTask(task: Task): void {
+      const index = this.tasks.indexOf(task);
+      if (index !== -1) {
+         this.tasks.splice(index, 1);
+      }
+   }
+
+   //removeTask(task: Task): void {
+   //   const index = this.tasks.indexOf(task);
+   //   if (index !== -1) {
+   //      this.tasks.splice(index, 1);
+   //   }
+   //}
+
    toggleTask(task: Task): void {
       task.done = !task.done;
    }
