@@ -35,6 +35,30 @@ export class TodoListComponent {
       }
    }
 
+   sortTasksByDeadline(): void {
+      this.tasks.sort((a, b) => {
+         const deadlineA = new Date(a.deadline);
+         const deadlineB = new Date(b.deadline);
+
+         if (!isNaN(deadlineA.getTime()) && !isNaN(deadlineB.getTime())) {
+            return deadlineA.getTime() - deadlineB.getTime();
+         }
+
+         if (!isNaN(deadlineA.getTime())) {
+            return -1;
+         }
+         if (!isNaN(deadlineB.getTime())) {
+            return 1;
+         }
+
+         return a.deadline.localeCompare(b.deadline);
+      });
+   }
+
+   filterTasksByPriority(): void {
+      this.tasks = this.tasks.filter(task => task.important);
+   }
+
    toggleTask(task: Task): void {
       task.done = !task.done;
    }

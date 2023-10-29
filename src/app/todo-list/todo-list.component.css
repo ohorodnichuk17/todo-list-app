@@ -8,6 +8,23 @@ body {
    font-family: Arial, Helvetica, sans-serif;
    color: black;
  }
+
+ .sort-btn, .filter-btn {
+   background-color: #3498db;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-right: 10px;
+   transition: background-color 0.3s ease;
+   margin-top: 20px;
+}
+
+.sort-btn:hover, .filter-btn:hover {
+   background-color: #2980b9;
+}
+
  
 ul.todo_list {
    list-style: none;
@@ -94,6 +111,8 @@ ul.todo_list {
 .form-group label {
    display: block;
    margin-bottom: 5px;
+   margin-top: 20px;
+
 }
 
 .form-control {

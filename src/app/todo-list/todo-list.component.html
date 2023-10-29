@@ -8,6 +8,10 @@
       <button class="remove-button" (click)="removeTask(task)">Remove</button>
    </li>
 </ul>
+
+<button (click)="sortTasksByDeadline()" class="sort-btn">Sort by Deadline</button>
+<button (click)="filterTasksByPriority()" class="filter-btn">Filter by Priority</button>
+
 <form (submit)="addTask(newTaskName.value, newTaskDeadline.value, newTaskImportant.checked)">
    <div class="form-group">
       <label for="newTaskName">Task Name:</label>
