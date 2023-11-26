@@ -2,6 +2,12 @@
 
 Live: https://icy-tree-08c56f010.4.azurestaticapps.net/
 
+
+<img width="1440" alt="Screenshot 2023-11-26 at 16 36 31" src="https://github.com/ohorodnichuk17/todo-list-app/assets/101930820/a6cad552-5264-4b77-b04e-bedb65d24903">
+
+<img width="1431" alt="Screenshot 2023-11-26 at 16 36 45" src="https://github.com/ohorodnichuk17/todo-list-app/assets/101930820/180bf80f-f91a-4557-bbbf-f20f4fdf608f">
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
 ## Development server
